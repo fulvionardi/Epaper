@@ -1,8 +1,8 @@
-# Waveshare 4inch e-Paper HAT+ Schematic Replication
+# Waveshare 3.6inch e-Paper HAT+ Schematic Replication
 
 ## Overview
 
-This project is a replication of the **Waveshare 4inch e-Paper HAT+** schematics, originally documented in `4inch_e-Paper_HAT+_Schematics.pdf`. The goal is to recreate the schematic faithfully in **KiCad** for learning, modification, or custom PCB development purposes.
+This project is a replication of the **Waveshare 3.6inch e-Paper HAT+** schematics, originally documented in `3.6inch_e-Paper_HAT+_Schematics.pdf`. The goal is to recreate the schematic faithfully in **KiCad** for learning, modification, or custom PCB development purposes.
 
 The original hardware is a 600×400 pixel e-paper display HAT designed for the Raspberry Pi, manufactured by Waveshare.
 
@@ -10,9 +10,9 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 
 ## Source Reference
 
-- **Original schematic:** `4inch_e-Paper_HAT+_Schematics.pdf`
+- **Original schematic:** `3.6inch_e-Paper_HAT+_Schematics.pdf`
 - **Manufacturer:** Waveshare
-- **Product:** 4inch e-Paper HAT+ (600×400 pixels)
+- **Product:** 3.6inch e-Paper HAT+ (600×400 pixels)
 - **Interface:** SPI (3-line or 4-line, selectable via BS0/BS1)
 
 ---
@@ -30,7 +30,7 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 ├── bom/
 │   └── bom.csv                    # Bill of materials
 └── reference/
-    └── 4inch_e-Paper_HAT+_Schematics.pdf
+    └── 3.6inch_e-Paper_HAT+_Schematics.pdf
 ```
 
 ---
