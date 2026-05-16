@@ -6,11 +6,16 @@ This project is a replication of the **Waveshare 3.6inch e-Paper HAT+** schemati
 
 The original hardware is a 600×400 pixel e-paper display HAT designed for the Raspberry Pi, manufactured by Waveshare.
 
+![Schematic Preview](./images/readme_image.png)
+
+📄 **[View Original Schematic (PDF)](./3.6inch_e-Paper_HAT+_Schematic.pdf)**
+
 ---
 
 ## Source Reference
 
 - **Original schematic:** `3.6inch_e-Paper_HAT+_Schematics.pdf`
+- **Source link:** https://www.waveshare.com/wiki/3.6inch_e-Paper_HAT%2B_(E)_Manual?srsltid=AfmBOorWlnluAFoRzEwT3edqMAU8t9G03QhICEiQ9qgBs1PhjLsAxZD9#Precautions
 - **Manufacturer:** Waveshare
 - **Product:** 3.6inch e-Paper HAT+ (600×400 pixels)
 - **Interface:** SPI (3-line or 4-line, selectable via BS0/BS1)
@@ -31,70 +36,6 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 ├── Schematics.kicad_sch                # Main schematic file
 └── coil_maker.py                       # Helper script
 ```
-
----
-
-## Circuit Blocks
-
-The schematic consists of the following main sections:
-
-### 1. FPC Connector (J1)
-- 50-pin, 0.5mm pitch FPC connector
-- Connects to the e-paper display panel
-- Includes decoupling capacitors on all power pins
-
-### 2. Boost Converter (Top)
-- MOSFET: BSS138LT1G (N-channel)
-- Inductor: L1 10uH
-- Diodes: D1, D2, D3 MBR0530 (Schottky)
-- Generates VPH, VGL, VGH rails for the display
-
-### 3. Boost Converter (Bottom)
-- MOSFET: SI2301CDS-T1-E3 (P-channel)
-- Inductor: L2 10uH
-- Diode: D4 MBR0530
-- Generates VPC rail
-
-### 4. Power Switch (Q3/Q4)
-- Q3: SI2301CDS-T1-E3 (P-channel MOSFET) — main power switch
-- Q4: SS8050 (NPN BJT) — gate driver for Q3
-- Controlled by PWR signal from Raspberry Pi
-
-### 5. Voltage Regulator (U3)
-- RT9193-33PB LDO regulator
-- Input: VCC from Raspberry Pi 5V
-- Output: 3V3_OUT (3.3V) for display logic
-
-### 6. Level Shifter (U1)
-- TXB0108PWR 8-bit bidirectional level shifter
-- Translates SPI signals between Raspberry Pi (3.3V) and display logic
-
-### 7. EEPROM (U2)
-- CAT24C32 32K I2C EEPROM
-- Stores HAT identification data for Raspberry Pi
-
-### 8. Raspberry Pi GPIO Connector (P1)
-- Standard 40-pin Raspberry Pi HAT connector
-- Carries SPI, I2C, power, and control signals
-
-### 9. SPI Interface Connector (P2)
-- 9-pin connector for direct SPI control
-- Alternative to Raspberry Pi connection
-
-### 10. BS0/BS1 Jumper (J2)
-- Selects SPI interface mode
-- 4 modes supported via BS0 and BS1 combination
-
----
-
-## SPI Mode Selection
-
-| Type | BS1 | BS0 | Mode |
-|------|-----|-----|------|
-| 1 | 0 | 0 | 4-wire SPI |
-| 2 | 0 | 1 | 3-wire SPI |
-| 3 | 1 | 0 | Standard 4-wire SPI |
-| 4 | 1 | 1 | SPI/Dual SPI/Quad SPI |
 
 ---
 
