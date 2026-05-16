@@ -20,17 +20,16 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 ## Project Structure
 
 ```
+├── .gitignore
 ├── README.md
-├── schematic/
-│   ├── epaper_hat.kicad_sch       # Main KiCad schematic file
-│   └── epaper_hat.kicad_pro       # KiCad project file
-├── library/
-│   ├── custom_symbols.kicad_sym   # Custom symbols (FPC connector, etc.)
-│   └── custom_footprints.pretty/  # Custom footprints if needed
-├── bom/
-│   └── bom.csv                    # Bill of materials
-└── reference/
-    └── 3.6inch_e-Paper_HAT+_Schematics.pdf
+├── 3.6inch_e-Paper_HAT+_Schematic.pdf  # Original Waveshare reference schematic
+├── Hat_Eink_Esp32.bak                  # KiCad schematic backup
+├── Hat_Eink_Esp32.kicad_sym            # Custom symbol library
+├── Schematics.kicad_pcb                # PCB layout file
+├── Schematics.kicad_prl                # Project local settings
+├── Schematics.kicad_pro                # KiCad project file
+├── Schematics.kicad_sch                # Main schematic file
+└── coil_maker.py                       # Helper script
 ```
 
 ---
