@@ -4,7 +4,7 @@
 
 This project is a replication of the **Waveshare 3.6inch e-Paper HAT+** schematics, originally documented in `3.6inch_e-Paper_HAT+_Schematics.pdf`. The goal is to recreate the schematic faithfully in **KiCad** for learning, modification, or custom PCB development purposes.
 
-The original hardware is a 600×400 pixel e-paper display HAT designed for the Raspberry Pi, manufactured by Waveshare.
+The original hardware is a 600×400 pixel e-paper display HAT designed for the Raspberry Pi/ESP32, manufactured by Waveshare.
 
 ![Schematic Preview](./images/readme_image.png)
 
@@ -42,7 +42,6 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 ## TODO
 
 - [ ] **Double check initial schematics** — verify all connections, net labels, and pin mappings against the original PDF before proceeding further
-- [ ] **Raspberry Pi circuit integration** — the Pi GPIO connector (P1) and associated signal routing is not yet included in the KiCad schematic
 - [ ] **Assign footprints to all components** — every symbol needs a verified footprint before PCB conversion is possible
 - [ ] **PCB layout** — no board layout has been started yet; component placement and trace routing still needed
 - [ ] **Test on real hardware** — validate the completed board against a physical microprocessor and e-paper display to confirm correct operation

@@ -1656,20 +1656,18 @@
 				)
 			)
 		)
-		(symbol "Eink_Esp32_Switch_0_1"
+		(symbol "Eink_Esp32_Switch_1_1"
 			(rectangle
 				(start 3.81 -2.54)
 				(end 7.62 -10.16)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "Eink_Esp32_Switch_1_1"
 			(pin passive line
 				(at 10.16 -3.81 180)
 				(length 2.54)
