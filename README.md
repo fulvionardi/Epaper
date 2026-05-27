@@ -42,7 +42,6 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 ## TODO
 
 - [ ] **Double check initial schematics** — verify all connections, net labels, and pin mappings against the original PDF before proceeding further
-- [ ] **Assign footprints to all components** — every symbol needs a verified footprint before PCB conversion is possible
 - [ ] **PCB layout** — no board layout has been started yet; component placement and trace routing still needed
 - [ ] **Test on real hardware** — validate the completed board against a physical microprocessor and e-paper display to confirm correct operation
 - [ ] **Review unnecessary components** — some components from the original Waveshare driver circuit may not be needed depending on the target use case; evaluate what can be simplified or removed
