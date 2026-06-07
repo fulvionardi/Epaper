@@ -8,6 +8,9 @@ The original hardware is a 600×400 pixel e-paper display HAT designed for the R
 
 ![Schematic Preview](./images/readme_image.png)
 
+![PCB Preview](./images/pcb_preview.png)
+
+
 📄 **[View Original Schematic (PDF)](./3.6inch_e-Paper_HAT+_Schematic.pdf)**
 
 ---
