@@ -1125,7 +1125,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at -5.08 -16.51 180)
 					(length 2.54)
 					(name "GDRC"
@@ -1470,7 +1470,7 @@
 				(pin passive line
 					(at -5.08 -64.77 180)
 					(length 2.54)
-					(name "EPD_RST'"
+					(name "RST_N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1488,7 +1488,7 @@
 				(pin passive line
 					(at -5.08 -67.31 180)
 					(length 2.54)
-					(name "EPD_BUSY'"
+					(name "BUSY_N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1506,7 +1506,7 @@
 				(pin passive line
 					(at -5.08 -69.85 180)
 					(length 2.54)
-					(name "EPD_DC'"
+					(name "DC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1524,7 +1524,7 @@
 				(pin passive line
 					(at -5.08 -72.39 180)
 					(length 2.54)
-					(name "EPD_CS'"
+					(name "CSB1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1542,7 +1542,7 @@
 				(pin passive line
 					(at -5.08 -74.93 180)
 					(length 2.54)
-					(name "EPD_SCK'"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1560,7 +1560,7 @@
 				(pin passive line
 					(at -5.08 -77.47 180)
 					(length 2.54)
-					(name "EPD_DIN'"
+					(name "SI0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5543,6 +5543,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 48.26) (xy 50.8 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b77bd8e-f5ca-4b85-9442-c6415cdf02c5")
+	)
+	(wire
+		(pts
 			(xy 149.86 35.56) (xy 149.86 45.72)
 		)
 		(stroke
@@ -6360,6 +6370,16 @@
 			(type default)
 		)
 		(uuid "524d6cf8-7a30-421f-8b86-a153ebf9d7ed")
+	)
+	(wire
+		(pts
+			(xy 234.95 76.2) (xy 250.19 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52fa8774-97a5-4c7a-9ac6-c9983bfc7cf4")
 	)
 	(wire
 		(pts
@@ -8061,6 +8081,16 @@
 		)
 		(uuid "09522760-2c5c-4343-a829-db111bf915ea")
 	)
+	(label "RPI_5V"
+		(at 250.19 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b509c0d-e914-47d3-9bed-7be90a626760")
+	)
 	(label "VSH_LV2"
 		(at 50.8 68.58 0)
 		(effects
@@ -8101,7 +8131,7 @@
 		)
 		(uuid "0fd4183f-079d-4164-bc25-ad1fe1564201")
 	)
-	(label "RESEC"
+	(label "VPC"
 		(at 50.8 53.34 0)
 		(effects
 			(font
@@ -8300,6 +8330,16 @@
 			(justify left bottom)
 		)
 		(uuid "4dc3f30b-24ed-4641-aad8-11879fab218e")
+	)
+	(label "GDRC"
+		(at 50.8 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fd6bd1f-d37a-47f7-90c3-e89f588b13e8")
 	)
 	(label "VCP2"
 		(at 50.8 129.54 0)
@@ -8871,6 +8911,16 @@
 		)
 		(uuid "dc08750c-bdf4-4727-9faa-7790c7ff65f6")
 	)
+	(label "VCC_INT"
+		(at 234.95 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd5cea02-5f4b-4901-a2e4-b0496aa7f520")
+	)
 	(label "EPD_CS'"
 		(at 50.8 104.14 0)
 		(effects
@@ -8891,7 +8941,7 @@
 		)
 		(uuid "e24232e9-e656-4c75-b171-d8feb52ab169")
 	)
-	(label "GDRC"
+	(label "RESEC"
 		(at 50.8 50.8 0)
 		(effects
 			(font
@@ -9041,7 +9091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 278.13 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9537,7 +9587,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 278.13 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10337,7 +10387,7 @@
 			)
 		)
 		(property "Value" "EEPROM_VCC"
-			(at 273.812 108.712 0)
+			(at 272.542 108.204 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10423,7 +10473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 227.33 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -11151,7 +11201,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 144.78 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11307,7 +11357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 180.34 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11546,7 +11596,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 232.41 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -11809,7 +11859,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.76 110.744 0)
+			(at 239.268 110.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11894,7 +11944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.96 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12292,7 +12342,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 57.15 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -12371,7 +12421,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 144.78 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -12442,7 +12492,7 @@
 			)
 		)
 		(property "Value" "EEPROM_VCC"
-			(at 239.268 86.36 90)
+			(at 239.522 84.074 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12908,7 +12958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 265.43 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13068,7 +13118,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 104.14 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -13224,7 +13274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.3 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -13535,7 +13585,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 229.87 110.744 0)
+			(at 230.632 110.998 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13620,7 +13670,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 232.41 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13844,7 +13894,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3V_OUT"
+		(property "Value" "EPD_3V3"
 			(at 79.502 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13930,7 +13980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 179.07 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14001,7 +14051,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 202.438 85.09 90)
+			(at 199.898 83.312 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14422,7 +14472,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 115.57 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -14501,7 +14551,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 168.91 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -14841,7 +14891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 227.33 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -15076,7 +15126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.96 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -16372,7 +16422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal"
+		(property "Footprint" "local:HDR-SMD_40P-P2.54-V-F-R2-C20-S2.54-LS7.1"
 			(at 205.74 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -16565,7 +16615,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.83 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -16644,7 +16694,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 60.96 127 0)
 			(hide yes)
 			(show_name no)
@@ -17026,7 +17076,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "de0ce515-0f74-4e27-bd95-90457cf1c56c")
-		(property "Reference" "U5"
+		(property "Reference" "U2"
 			(at 250.698 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17106,7 +17156,7 @@
 		(instances
 			(project "Schematics"
 				(path "/ba81e668-39a3-44b1-9436-fbe95b38ede8"
-					(reference "U5")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -17143,7 +17193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 158.75 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -17303,7 +17353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 97.79 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -17532,7 +17582,7 @@
 			)
 		)
 		(property "Value" "EEPROM_VCC"
-			(at 273.304 82.55 0)
+			(at 272.288 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17853,7 +17903,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 265.43 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -18085,7 +18135,7 @@
 			)
 		)
 		(property "Value" "SI2301CDS-T1-E3"
-			(at 191.77 88.9 90)
+			(at 192.278 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18168,7 +18218,7 @@
 				)
 			)
 		)
-		(property "Value" "3V3_OUT"
+		(property "Value" "VDD"
 			(at 200.152 62.992 90)
 			(show_name no)
 			(do_not_autoplace no)
