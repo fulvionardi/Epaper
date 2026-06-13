@@ -38913,35 +38913,5 @@
 			)
 		)
 	)
-	(zone
-		(layer "F.Paste")
-		(uuid "59371340-4caf-44a5-bc77-09e2497b279a")
-		(hatch edge 0.5)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.25)
-		(keepout
-			(tracks not_allowed)
-			(vias not_allowed)
-			(pads not_allowed)
-			(copperpour allowed)
-			(footprints allowed)
-		)
-		(placement
-			(enabled no)
-			(sheetname "/")
-		)
-		(fill
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
-		)
-		(polygon
-			(pts
-				(xy 116.952923 77.903243) (xy 51.061413 77.97721) (xy 51.011864 33.837935) (xy 116.884509 33.606139)
-			)
-		)
-	)
 	(embedded_fonts no)
 )
