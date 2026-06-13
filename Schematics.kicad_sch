@@ -9150,11 +9150,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0735dc83-a13a-43e0-8f44-f22fd1598053")
 		(property "Reference" "P2"
-			(at 27.94 168.91 0)
-			(hide yes)
+			(at 28.956 164.592 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10618,10 +10616,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "30689a50-ad9c-4adc-b6d2-5da4d16417a1")
 		(property "Reference" "U3"
-			(at 116.205 166.37 0)
+			(at 115.824 167.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10630,8 +10627,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 107.95 171.45 0)
+		(property "Value" "ME6217C33M5G"
+			(at 116.332 178.054 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11032,7 +11029,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100nF/50V"
+		(property "Value" "1uF/50V"
 			(at 141.224 164.846 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11678,7 +11675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "local:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+		(property "Footprint" "local:SOT-23-3_L3.0-W1.7-P0.95-LS2.9-BR"
 			(at 191.77 112.776 0)
 			(hide yes)
 			(show_name no)
@@ -12411,7 +12408,7 @@
 				)
 			)
 		)
-		(property "Value" "NC"
+		(property "Value" "0R"
 			(at 143.764 141.478 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12948,7 +12945,7 @@
 				)
 			)
 		)
-		(property "Value" "3.9K"
+		(property "Value" "3.9KΩ"
 			(at 270.256 100.584 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13264,7 +13261,7 @@
 				)
 			)
 		)
-		(property "Value" "0.2MΩ"
+		(property "Value" "0.2Ω"
 			(at 117.856 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15759,7 +15756,7 @@
 				)
 			)
 		)
-		(property "Value" "470uF/25V"
+		(property "Value" "470nF/25V"
 			(at 69.8563 29.21 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16331,7 +16328,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100nF/50V"
+		(property "Value" "1uF/50V"
 			(at 195.58 136.398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16754,7 +16751,7 @@
 		(dnp no)
 		(uuid "d7059ce5-3132-432a-9ebb-376d4d6a7f51")
 		(property "Reference" "U6"
-			(at 231.14 121.92 0)
+			(at 232.41 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16764,7 +16761,7 @@
 			)
 		)
 		(property "Value" "TXB0108PWR"
-			(at 231.14 124.46 0)
+			(at 233.172 123.952 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17174,7 +17171,7 @@
 		(dnp no)
 		(uuid "dea9f0bb-f0f9-4a8f-b707-f0975e898d92")
 		(property "Reference" "R1"
-			(at 158.75 27.178 90)
+			(at 159.004 23.876 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17184,7 +17181,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 158.75 23.622 90)
+			(at 158.75 27.178 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17423,8 +17420,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100nF/50V"
-			(at 268.478 135.636 0)
+		(property "Value" "1uF/50V"
+			(at 265.43 135.382 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17737,7 +17734,7 @@
 				)
 			)
 		)
-		(property "Value" "470uF/25V"
+		(property "Value" "470nF/25V"
 			(at 68.58 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17893,7 +17890,7 @@
 				)
 			)
 		)
-		(property "Value" "3.9K"
+		(property "Value" "3.9KΩ"
 			(at 269.748 103.378 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17985,7 +17982,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 193.04 35.56 0)
 			(hide yes)
 			(show_name no)
