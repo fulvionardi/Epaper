@@ -6383,6 +6383,7 @@
 		(property "Value" "CL31A107MQHNNNE"
 			(at 0 4 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "b02764a5-e5e8-47e5-b17e-d959c83c4289")
 			(effects
 				(font
@@ -6421,6 +6422,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11256,6 +11258,30 @@
 		(uuid "9ac44561-8c05-4fd8-ae5b-7ccc41b20dde")
 	)
 	(segment
+		(start 88.138 54.438)
+		(end 93.726 60.026)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "3V3_OUT")
+		(uuid "6b006a2a-9121-4b63-9199-f19ce46a9df6")
+	)
+	(segment
+		(start 93.726 60.026)
+		(end 93.726 63.627)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "3V3_OUT")
+		(uuid "7ec2c606-05b5-4793-96ce-5b84c337e9e8")
+	)
+	(segment
+		(start 88.138 53.988)
+		(end 88.138 54.438)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "3V3_OUT")
+		(uuid "ae6738c7-e2f2-4fb5-8d87-70d069d1c62a")
+	)
+	(segment
 		(start 48.006 69.977)
 		(end 46.856 68.827)
 		(width 0.2)
@@ -15575,30 +15601,6 @@
 		(layer "B.Cu")
 		(net "/VGH")
 		(uuid "7bff070b-3e0d-4f7e-b0f7-6a9b2f5ed95c")
-	)
-	(segment
-		(start 88.138 54.438)
-		(end 93.726 60.026)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "3V3_OUT")
-		(uuid "6b006a2a-9121-4b63-9199-f19ce46a9df6")
-	)
-	(segment
-		(start 93.726 60.026)
-		(end 93.726 63.627)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "3V3_OUT")
-		(uuid "7ec2c606-05b5-4793-96ce-5b84c337e9e8")
-	)
-	(segment
-		(start 88.138 53.988)
-		(end 88.138 54.438)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "3V3_OUT")
-		(uuid "ae6738c7-e2f2-4fb5-8d87-70d069d1c62a")
 	)
 	(zone
 		(net "GND")
