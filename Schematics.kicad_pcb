@@ -8507,6 +8507,7 @@
 		(property "Reference" "C29"
 			(at 0 -4 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "69d5f581-4862-4451-87f4-aa5376fc9583")
 			(effects
 				(font
@@ -8557,6 +8558,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
