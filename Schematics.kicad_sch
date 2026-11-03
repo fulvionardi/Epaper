@@ -7543,7 +7543,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22Ω"
+		(property "Value" "0.2Ω"
 			(at 117.348 44.958 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7553,7 +7553,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.3 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8111,7 +8111,7 @@
 				)
 			)
 		)
-		(property "Value" "0.22Ω"
+		(property "Value" "0.2Ω"
 			(at 117.856 104.648 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8121,7 +8121,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 118.11 102.87 0)
 			(hide yes)
 			(show_name no)
